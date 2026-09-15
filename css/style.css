@@ -2,16 +2,49 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.35;
     color: #172638;
     background: #dfe9fb;
 }
 
+
+.container {
+    width: 90%;
+    max-width: 827px;
+    margin: 0 auto;
+}
+.container1 {
+    width: 90%;
+    max-width: 827px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    
+}
+
+nav li{
+    background-color: #243f70;
+    margin-top: 3px;
+    border: 3px solid rgb(0, 0, 0);
+
+}
+nav li a{
+    color: white;
+}
+
 header {
-    padding: 30px 10px;
+    padding: 44px 0 42px;
     background: #243f70;
     color: white;
     text-align: center;
@@ -20,78 +53,215 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
+    font-weight: 400;
 }
 
 header p {
-    margin: 3px 0 0;
+    margin: 2px 0 0;
+    font-size: 12px;
 }
 
+
+
 nav {
-    padding: 10px;
+    height: 52px;
     background: white;
-    text-align: center;
+    border-bottom: 1px solid #d4dbe6;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
 nav a {
-    margin: 0 10px;
+    display: block;
+    padding: 11px 4px;
+
     color: #172638;
+    font-size: 13px;
     text-decoration: none;
 }
 
-main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 15px auto;
+nav a:hover {
+background-color: aquamarine;
+color: black;
 }
+
+
+
+main {
+    padding-top: 27px;
+}
+
+
 
 section {
-    padding: 15px;
+    margin-bottom: 35px;
+    padding: 15px 17px;
+
     background: white;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    border-radius: 14px;
 }
+
+
 
 h2 {
-    margin-top: 0;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #aeb7c4;
-    font-size: 12px;
-    font-weight: normal;
+    margin: 0 0 5px;
+
+    color: #172638;
+    font-size: 14px;
+    font-weight: 400;
+
+    border-bottom: 1px solid #888;
+    padding-bottom: 1px;
 }
 
-.profilkep {
-    width: 100px;
-    height: 100px;
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    min-height: 159px;
 }
+
+.intro img {
+    width: 132px;
+    height: 132px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text p {
+    margin: 0 0 4px;
+    font-size: 14px;
+    line-height: 1.15;
+}
+
+
+
+#keszsegek {
+    padding: 11px 22px 28px;
+}
+
+#keszsegek h2 {
+    margin-bottom: 18px;
+}
+
+.keszsegeim {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 36px;
+    row-gap: 34px;
+
+    padding: 0 39px;
+}
+
+.lapok {
+    height: 53px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e2ebfb;
+
+    border-radius: 13px;
+
+    text-align: center;
+
+    font-size: 22px;
+}
+
+
 
 @media (max-width: 800px) {
 
-    header {
-        padding: 18px 10px;
-    }
-
-    header h1 {
-        font-size: 16px;
-    }
-
-    nav a {
-        display: block;
-        margin: 5px;
-    }
-
-    main {
+    .container {
         width: 94%;
     }
 
+    header {
+        padding: 30px 0;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 10px;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 5px 15px;
+        padding: 8px 0;
+    }
+
+    nav a {
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    main {
+        padding-top: 15px;
+    }
+
     section {
-        gap: 10px;
+        margin-bottom: 15px;
+        padding: 12px;
+    }
+
+    .intro {
+        gap: 12px;
         align-items: flex-start;
     }
 
-    .profilkep {
-        width: 100px;
-        height: 100px;
+    .intro img {
+        width: 80px;
+        height: 80px;
+        margin-top: 5px;
+    }
+
+    .intro-text p {
+        font-size: 11px;
+    }
+
+    #keszsegek {
+        padding: 12px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .card {
+        height: 45px;
+        font-size: 17px;
     }
 }
