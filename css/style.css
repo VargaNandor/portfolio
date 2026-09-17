@@ -191,13 +191,83 @@ h2 {
     font-size: 22px;
 }
 
+.lapok:hover
+{
+        transition: 0.3s;
+        height: 65px;
+        background-color: #4974c4;
+}
 
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card {
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-radius: 7px;
+    background: #e2ebfb;
+    text-align: center;
+    font-size: 12px;
+}
+
+.project-lapok {
+    padding: 7px 8px 9px;
+    border: 0;
+    border-radius: 7px;
+    background: #e2ebfb;
+}
+
+.project-lapok img {
+    display: block;
+    width: 100%;
+    height: 78px;
+    object-fit: contain;
+    margin-bottom: 4px;
+    border-radius: 3px;
+}
+
+.project-lapok h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.project-lapok:hover
+{
+        transition: 0.3s;
+        height: 120px;
+        background-color: #4974c4;
+}
 
 @media (max-width: 800px) {
 
     .container {
         width: 94%;
     }
+    .container1 {
+        width: 90%;
+        margin: auto;
+        padding: 0 15px;
+    }
+
+    nav ul {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+    }
+
+
 
     header {
         padding: 30px 0;
@@ -253,15 +323,46 @@ h2 {
     #keszsegek {
         padding: 12px;
     }
+    
 
-    .skills {
+    .keszsegeim {
         grid-template-columns: 1fr;
         gap: 10px;
         padding: 0 15px;
     }
 
-    .card {
+    .lapok {
         height: 45px;
         font-size: 17px;
     }
+
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 4px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+    .project-lapok {
+        padding: 4px 5px 5px;
+        border-radius: 5px;
+    }
+
+    .project-lapok img {
+        height: 45px;
+        margin-bottom: 2px;
+    }
+
+    .project-lapok h3 {
+        font-size: 8px;
+    }
+
+    .project-lapok:hover
+{
+        transition: 0.3s;
+        height: 70px;
+        background-color: #4974c4;
+}
 }
