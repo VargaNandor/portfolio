@@ -247,6 +247,12 @@ h2 {
         background-color: #4974c4;
 }
 
+    .contact {
+        padding-left: 14px;
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
 @media (max-width: 800px) {
 
     .container {
