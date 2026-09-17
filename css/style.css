@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -93,7 +91,7 @@ nav a {
 
 nav a:hover {
     transition: 0.7s;
-    background-color: aquamarine;
+    background-color: #4974c4;
     color: black;
 }
 
