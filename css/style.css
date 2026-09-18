@@ -46,6 +46,7 @@ header h1 {
     margin: 0;
     font-size: 24px;
     font-weight: 400;
+    font-style: italic;
 }
 
 header p {
@@ -159,8 +160,8 @@ h2 {
 
 .keszsegeim {
     display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    
 
     column-gap: 36px;
     row-gap: 34px;
